@@ -11,6 +11,7 @@ gunicorn = "*"
 psycopg2-binary = "*"
 django-extensions = "*"
 djangorestframework = "*"
+django-phone-field = "*"
 
 [requires]
 python_version = "3.8"

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'providence_app',
+    'phone_field',
 ]
 
 MIDDLEWARE = [
