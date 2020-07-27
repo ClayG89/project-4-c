@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 django-extensions = "*"
 djangorestframework = "*"
 django-phone-field = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.8"
