@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
 import axios from 'axios'
-// import Home from './Home'
-// import Truck from './Truck'
-// import Load from './Load'
 
 axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = 'X-CSRFToken'
@@ -57,42 +53,7 @@ export default class Dispatch extends Component {
             this.setState({ error: error.message })
         }
     }
-    // componentDidMount() {
-    //     const truckId = this.props.match.params.id;
-    //     this.fetchTruck(truckId)
-    // }
 
-    // fetchTruck = async (truckId) => {
-    //     try {
-    //         const truckResponse = await axios.get(`/api/v1/trucks/${truckId}/`)
-    //         this.setState({
-    //             truck: truckResponse.data,
-    //             load: truckResponse.data.loads,
-    //         })
-    //     }
-    //     catch (error) {
-    //         console.log(error)
-    //         this.setState({ error: error.message })
-    //     }
-    // }
-    // componentDidMount() {
-    //     const loadId = this.props.match.params.id;
-    //     this.fetchLoad(loadId)
-    // }
-
-    // fetchLoad = async (loadId) => {
-    //     try {
-    //         const loadResponse = await axios.get(`/api/v1/loads/${loadId}/`)
-    //         this.setState({
-    //             load: loadResponse.data,
-    //             truck: loadResponse.data.trucks,
-    //         })
-    //     }
-    //     catch (error) {
-    //         console.log(error)
-    //         this.setState({ error: error.message })
-    //     }
-    // }
     render() {
         return (
             
