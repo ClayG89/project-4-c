@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'providence_app',
     'phone_field',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
