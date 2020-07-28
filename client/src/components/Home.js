@@ -25,17 +25,17 @@ export default class Home extends Component {
                     <div className="homeImg">
                         <div className="truckImg">
                             <div>
+                                    <img src="https://www.pinclipart.com/picdir/big/199-1999460_semi-spotted-on-its-st-cargo-trip-tesla.png" alt="Truck" width="250" height="125" />
                                 <Link to="/truck">
-                                    <img src="/Truck2.jpg" alt="Truck" width="350" height="225" />
-                                    <div className="truckText"><h4>Trucks</h4></div>
+                                    <div className="truckText"><button>Find a Truck</button></div>
                                 </Link>
                             </div>
                         </div>
                         <div className="freightImg">
                             <div>
+                                    <img src="https://www.nfiindustries.com/wp-content/uploads/2015/08/home-services-icon-forklift.png" alt="Truck" width="275" height="125" />
                                 <Link to="/load">
-                                    <img src="/freight3.jpg" alt="Truck" width="350" height="225" />
-                                    <div className="freightText"><h4>Loads</h4></div>
+                                    <div className="freightText"><button>Find a Load</button></div>
                                 </Link>
                             </div>
 
