@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+# build/
 develop-eggs/
 dist/
 downloads/
@@ -140,4 +140,4 @@ cython_debug/
 
 # static files generated from Django application using `collectstatic`
 media
-static
+# static
