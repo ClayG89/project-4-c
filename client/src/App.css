@@ -7,24 +7,25 @@
   background-attachment: center;
   background-size: cover;
   background-repeat: no-repeat;
+  grid-template-rows: 1fr 2fr;
 }
 .homeHeader {
   display: grid;
   width: 100%;
   grid-column: span 2;
-  grid-template-rows: 0.4fr 0.4fr;
+  grid-template-rows: 0.4fr 0.2fr;
 }
 .Title {
   font-size: 35px;
   color: white;
 }
+
 button {
   background-color: rgba(28, 185, 247);
   color: white;
-  font-size: 16px;
 }
 input {
-  font-size: 16px;
+  font-size: 18px;
 }
 .homeBody {
   display: grid;
@@ -45,33 +46,41 @@ input {
   width: 210px;
   /* background-color: rgba(28, 185, 247, 0.1); */
   text-align: left;
-  padding: .5em;
+  padding: 1em;
 }
-.truckImg img {
+.truckImg a img {
   border-radius: 6px;
   padding: 0.5em;
+  opacity: 0.8;
 }
 .truckImg a { 
   text-align: center;
 }
-.truckImg a .truckText button {
-  position: relative;
-  font-size: 16px;
+.truckImg .truckText {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  color: white;
+  font-size: 20px;
   border-radius: 4px;
-  max-height: 32px;
+  padding: .1em;
 }
-.freightImg img {
+.freightImg  a img {
   border-radius: 6px;
   padding: 0.5em;
+  opacity: 0.8;
 }
 .freightImg a {
   text-align: center;
 }
-.freightImg a .freightText button {
-  position: relative;
-  font-size: 16px;
+.freightImg .freightText{
+  position: absolute;
+  top: 64%;
+  left: 43%;
+  color: white;
+  font-size: 20px;
   border-radius: 4px;
-  max-height: 32px;
+  padding: .1em;
 }
 .homeFooter {
   display: grid;

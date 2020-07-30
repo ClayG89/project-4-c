@@ -12,7 +12,7 @@ export default class Home extends Component {
                     </div>
                     <div className="locater">
                         <input type="text" placeholder="Enter Location" />
-                        <button>Submit</button>
+                        {/* <button>Submit</button> */}
                     </div>
                 </div>
                 <div className="About">
@@ -25,17 +25,17 @@ export default class Home extends Component {
                     <div className="homeImg">
                         <div className="truckImg">
                             <div>
-                                    <img src="https://www.pinclipart.com/picdir/big/199-1999460_semi-spotted-on-its-st-cargo-trip-tesla.png" alt="Truck" width="250" height="125" />
                                 <Link to="/truck">
-                                    <div className="truckText"><button>Find a Truck</button></div>
+                                    <img src="https://t4.ftcdn.net/jpg/03/01/80/43/240_F_301804370_bRziBCscumx272ERewFW8IzHNI5VRGCs.jpg" alt="truck" width="250px" />
+                                    <div className="truckText"><h4>Find a Truck</h4></div>
                                 </Link>
                             </div>
                         </div>
                         <div className="freightImg">
                             <div>
-                                    <img src="https://www.nfiindustries.com/wp-content/uploads/2015/08/home-services-icon-forklift.png" alt="Truck" width="275" height="125" />
                                 <Link to="/load">
-                                    <div className="freightText"><button>Find a Load</button></div>
+                                    <img src="https://img.freepik.com/free-photo/forklift-black-background_110488-911.jpg?size=626&ext=jpg" alt="Truck" width="250" />
+                                    <div className="freightText"><h4>Find a Load</h4></div>
                                 </Link>
                             </div>
 
