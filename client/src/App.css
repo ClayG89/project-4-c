@@ -5,9 +5,9 @@
   height: 100%;
   background-attachment: center;
   background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   grid-template-rows: 1fr 2fr;
+  background-size: cover;
 }
 .homeHeader {
   display: grid;
