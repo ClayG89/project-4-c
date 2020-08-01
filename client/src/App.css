@@ -3,8 +3,8 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
   background-attachment: center;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   grid-template-rows: 1fr 2fr;
@@ -49,7 +49,7 @@ input {
   padding: 1em;
 }
 .truckImg a img {
-  border-radius: 6px;
+  border-radius: 4px;
   opacity: 0.8;
 }
 .truckImg a { 
@@ -65,7 +65,7 @@ input {
   padding: .1em;
 }
 .freightImg  a img {
-  border-radius: 6px;
+  border-radius: 4px;
   opacity: 0.8;
 }
 .freightImg a {
