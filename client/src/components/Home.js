@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import React, { Component } from 'react'
+
 
 export default class Home extends Component {
     render() {
@@ -34,7 +34,7 @@ export default class Home extends Component {
                         <div className="freightImg">
                             <div>
                                 <Link to="/load">
-                                    <img src="https://img.freepik.com/free-photo/forklift-black-background_110488-911.jpg?size=626&ext=jpg" alt="Truck" width="250" />
+                                    <img src="https://img.freepik.com/free-photo/forklift-black-background_110488-911.jpg?size=626&ext=jpg" alt="load" width="250px" />
                                     <div className="freightText"><h4>Find a Load</h4></div>
                                 </Link>
                             </div>

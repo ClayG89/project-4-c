@@ -1,10 +1,10 @@
 {
-    "name": "providence_project",
-    "scripts": {
-      "build": "cd client && npm install && npm run build && cd ..",
-      "postinstall": "npm run build && echo 'Client built!'"
-    },
-    "dependencies": {
-      "bootstrap": "^4.4.1"
-    }
+  "name": "providence_project",
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "postinstall": "npm run build && echo 'Client built!'"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
+}
