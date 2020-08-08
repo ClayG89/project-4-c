@@ -13,8 +13,11 @@ export default class Home extends Component {
                     </div>
                     <div className="locater">
                         <input type="text" placeholder="Enter Location" />
-                        {/* <button>Submit</button> */}
                     </div>
+                    <div className="locater2">
+                        <input type="text" placeholder="Enter Radius" />
+                    </div>
+                    
                 </div>
                 <div className="About">
                     <h3>About Us</h3>
@@ -47,7 +50,9 @@ export default class Home extends Component {
                 <div className="homeFooter">
                     <div><p>Page created by Clayborn Guess using React, Django REST and PostgreSQL.</p></div>
                     <div><p>claybornguess@yahoo.com</p></div>
-                    <div></div>
+                    <Link to="/dispatch"> <div className="dispatchButton">
+                    <button>Current Dispatch</button>
+                    </div></Link>
                 </div>
             </div>
         )

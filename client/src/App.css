@@ -14,13 +14,19 @@
   grid-column: span 2;
   grid-template-rows: 0.4fr 0.2fr;
 }
+.locater {
+  padding: .5em;
+}
 .Title {
   font-size: 35px;
   color: white;
 }
-
+.dispatchButton {
+  position: relative;
+  left: 20%;
+}
 button {
-  background-color: rgba(28, 185, 247);
+  background-color: rgba(35,35,35);
   color: white;
 }
 input {

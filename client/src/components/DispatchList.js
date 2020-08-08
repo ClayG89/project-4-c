@@ -10,12 +10,13 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 export default class DispatchList extends Component {
     state = {
         dispatchlist: [],
-        newDispatchList: {}
-        
+        newDispatchList: {},
+        loadlist: []
+
     }
-        // dispatchlist: [],
-        // loadlist: [],
-   
+    // dispatchlist: [],
+    // loadlist: [],
+
     getDispatchList = () => {
         axios.get('/api/v1/dispatchs/').then((response) => {
             const foundDispatchList = response.data;
@@ -31,7 +32,7 @@ export default class DispatchList extends Component {
         });
     }
     updateDispatch = (event) => {
-        const updatedNewDispatchList = { ...this.state.newDispatchList};
+        const updatedNewDispatchList = { ...this.state.newDispatchList };
         updatedNewDispatchList[event.target.name] = event.target.value;
         this.setState({
             newDispatchList: updatedNewDispatchList,
@@ -68,10 +69,9 @@ export default class DispatchList extends Component {
                         {
                             this.state.dispatchlist.map((dispatch, i) => {
                                 return (
-
-                                    <div key={ i }>
-                                        <Link to={`/dispatch/${dispatch.id}`}>{dispatch.id}</Link>
-                                    </div>
+                                        <div key={i}>
+                                            <Link to={`/dispatch/${dispatch.id}`}>{dispatch.loadinfo.pickuploc} to {dispatch.loadinfo.deliveryloc}</Link>
+                                        </div>
 
                                 )
                             })
@@ -88,7 +88,7 @@ export default class DispatchList extends Component {
                             }
                         </div> */}
                     </div>
-                  
+
                     {/* <h3>Driver Name: {this.state.trucklist.name}</h3>
                     <h3>Trailer Type: {this.state.trucklist.trailertype}</h3>
                     <h3>Trailer Number: {this.state.trucklist.trailernum}</h3>
