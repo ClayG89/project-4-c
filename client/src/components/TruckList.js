@@ -37,6 +37,7 @@ export default class TruckList extends Component {
         axios.post('/api/v1/trucks/', this.state.newTruckList).then(() => {
             this.toggleCreateForm();
             this.getTruckList();
+            document.forms['tlform'].reset()
         });
     }
     componentDidMount() {
