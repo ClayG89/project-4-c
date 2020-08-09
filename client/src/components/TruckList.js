@@ -44,58 +44,52 @@ export default class TruckList extends Component {
     }
     render() {
         return (
-            <div>
-
-                <h2>Trucks</h2>
-
-                <div className="availableTrucks">
-
-                    {
-                        this.state.trucklist.map((truck, i) => {
-                            return (
-                                <div key={i}>
-                                    <Link to={`/truck/${truck.id}`}>{truck.name}</Link>
-                                </div>
-                            )
-                        })
-                    }
+            <div className="truckListWrapper">
+                <div className="truckListHeader">
+                    <h2>Trucks</h2>
                 </div>
-
-                <div>
-                    <h4>Driver Name</h4>
-                    <input type="text" name="name" onChange={this.updateTruck} />
+                <div className="truckListMain">
+                    <div className="truckListInput">
+                        <form id="tlform">
+                            <div className="tlinput1">
+                                <input type="text" name="name" placeholder="Driver name" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput2">
+                                <input type="text" name="trailertype" placeholder="Trailer Type" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput3">
+                                <input type="number" name="trailernum" placeholder="Trailer Number" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput4">
+                                <input type="number" name="hours" placeholder="Hours Available" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput5">
+                                <input type="tel" name="Phone" placeholder="Phone" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput6">
+                                <input type="number" name="trucknum" placeholder="Truck Number" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput7">
+                                <input type="number" name="drivernum" placeholder="Driver Number" onChange={this.updateTruck} />
+                            </div>
+                            <div className="tlinput8">
+                                <input type="email" name="email" placeholder="Email" onChange={this.updateTruck} />
+                            </div>
+                            <button onClick={this.submitCreateTruck}>Submit</button>
+                        </form>
+                    </div>
+                    <div className="availableTrucks">
+                        {
+                            this.state.trucklist.map((truck, i) => {
+                                return (
+                                    <div key={i}>
+                                        <Link className="text-link" to={`/truck/${truck.id}`}>{truck.name}</Link>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-                <div>
-                    <h4>Trailer Type</h4>
-                    <input type="text" name="trailertype" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Trailer Number</h4>
-                    <input type="number" name="trailernum" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Hours Available</h4>
-                    <input type="number" name="hours" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Phone</h4>
-                    <input type="tel" name="Phone" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Truck Number</h4>
-                    <input type="number" name="trucknum" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Driver Number</h4>
-                    <input type="number" name="drivernum" onChange={this.updateTruck} />
-                </div>
-                <div>
-                    <h4>Email</h4>
-                    <input type="email" name="email" onChange={this.updateTruck} />
-                </div>
-
-                <button onClick={this.submitCreateTruck}>Submit</button>
-
             </div>
         )
     }

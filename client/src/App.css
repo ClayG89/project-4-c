@@ -13,9 +13,14 @@
   width: 100%;
   grid-column: span 2;
   grid-template-rows: 0.4fr 0.2fr;
+  text-align: center;
 }
 .locater {
   padding: .5em;
+  text-align: center;
+}
+.locater2{
+  text-align: center;
 }
 .Title {
   font-size: 35px;
@@ -94,9 +99,69 @@ input {
   color: white;
   font-size: 12px;
 }
-.App {
+ /* .App {
+  text-align: center;
+} */
+.truckListWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: 1fr 4fr;
+}
+.truckListHeader {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+.truckListMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.truckListInput {
+  margin-left: 2em;
+}
+.tlinput1 {
+padding: 1em;
+}
+.tlinput2 {
+  padding: 1em;
+}
+.tlinput3 {
+  padding: 1em;
+}
+.tlinput4 {
+  padding: 1em;
+}
+.tlinput5 {
+  padding: 1em;
+}
+.tlinput6 {
+  padding: 1em;
+}
+.tlinput7 {
+  padding: 1em;
+}
+.tlinput8 {
+  padding: 1em;
+}
+.truckListInput button {
+  margin-left: 6em;
+}
+
+.availableTrucks .text-link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
   text-align: center;
 }
+.availableTrucks a {
+  text-align: center;
+}
+
 
 
 
