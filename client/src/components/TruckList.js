@@ -91,6 +91,15 @@ export default class TruckList extends Component {
                         }
                     </div>
                 </div>
+                <div className="tlFooter">
+                    <div><p>Page created by Clayborn Guess using React, Django REST and PostgreSQL.</p></div>
+                    <Link to="/"> <div className="dispatchButton">
+                        <button>Home</button>
+                    </div></Link>
+                    <Link to="/dispatch"> <div className="dispatchButton">
+                        <button>Current Dispatch</button>
+                    </div></Link>
+                </div>
             </div>
         )
     }

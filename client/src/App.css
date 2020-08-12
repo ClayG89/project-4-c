@@ -110,7 +110,7 @@ input {
   height: 100%;
   background-attachment: center;
   background-size: cover;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: .5fr 4fr .5fr;
 }
 .truckListHeader {
   text-align: center;
@@ -158,13 +158,233 @@ padding: 1em;
   font-size: 24px;
   text-align: center;
 }
-.availableTrucks a {
+.availableTrucks {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 75%;
+}
+.tlFooter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  padding-left: 1em;
+}
+.truckWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: .5fr 4fr .5fr;
+}
+.truckHeader {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  left: 20%;
+}
+.truckMain {
+  color: white;
+  font-size: 24px;
+  position: relative;
+  left: 20%;
+}
+.truckFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 1em;
+}
+.truckFooter .homeButton {
   text-align: center;
 }
-
-
-
-
-
-
+.truckFooter .tlButton {
+  text-align: center;
+}
+.loadListWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: .5fr 4fr .5fr;
+}
+.loadListHeader {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  left: 20%;
+}
+.loadListMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  text-align: center;
+}
+.llinput1 {
+  padding: 1em;
+}
+.llinput2 {
+  padding: 1em;
+}
+.llinput3 {
+  padding: 1em;
+}
+.llinput4 {
+  padding: 1em;
+}
+.llinput5 {
+  padding: 1em;
+}
+.llinput6 {
+  padding: 1em;
+}
+.llinput7 {
+  padding: 1em;
+}
+.llinput8 {
+  padding: 1em;
+}
+.llinput9 {
+  padding: 1em;
+}
+.availableLoads .text-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.availableLoads {
+  padding: 3em;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 65%;
+}
+.llFooter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  padding-left: 1em;
+}
+.loadListMain2 button {
+  margin-top: 1em;
+}
+.loadWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: .5fr 4fr .5fr;
+}
+.loadHeader {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  left: 20%;
+}
+.loadMain {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 20%;
+}
+.loadFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 1em;
+}
+.dispatchListWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: .5fr 4fr .5fr;
+}
+.dispatchListHeader {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  right: 20%;
+}
+.dispatchListMain {
+  color: white;
+  font-size: 24px;
+  position: relative;
+  left: 10%;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 90%;
+}
+.dispatchListMain .text-link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  /* text-align: center; */
+}
+.dlFooter{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  padding-left: 1em;
+}
+.dispatchWrapper {
+  display: grid;
+  background-image: url("https://convoylogistics.com/wp-content/uploads/2016/04/convoylogistics-1024x376.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-attachment: center;
+  background-size: cover;
+  grid-template-rows: .5fr 4fr .5fr;
+}
+.dispatchHeader {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  left: 20%;
+  
+}
+.dispatchMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dispatchTruckInfo {
+  color: white;
+  position: relative;
+  left: 30%;
+}
+.dispatchLoadInfo {
+  color: white;
+  position: relative;
+  right: 20%;
+}
+.dispatchFooter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  color: white;
+  font-size: 12px;
+  margin-left: 1em;
+}
 
