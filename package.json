@@ -6,5 +6,20 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClayG89/project-4-c.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClayG89/project-4-c/issues"
+  },
+  "homepage": "https://github.com/ClayG89/project-4-c#readme",
+  "description": ""
 }
